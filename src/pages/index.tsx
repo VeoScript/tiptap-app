@@ -1,15 +1,17 @@
-import { Inter } from "next/font/google";
-import clsx from "clsx";
+import Head from "next/head";
 import TipTap from "~/components/TipTap";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={clsx("flex flex-grow items-center justify-center w-full h-full p-10", inter.className)}>
-      <div className="flex justify-center w-full max-w-3xl">
-        <TipTap />
+    <>
+      <Head>
+        <title>TipTap Richtext Editor</title>
+      </Head>
+      <div className="flex flex-grow items-center justify-center w-full h-full p-10 font-roboto-mono">
+        <div className="flex justify-center w-full max-w-3xl">
+          <TipTap />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
