@@ -9,6 +9,14 @@
   > * + * {
     margin-top: 0.75em;
   }
+  
+  p.is-editor-empty:first-child::before {
+    color: #adb5bd;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
 
   ul,
   ol {
