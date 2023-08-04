@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -272,7 +271,7 @@ const TipTap = () => {
     <div className="flex flex-col items-center w-full overflow-hidden rounded-xl border-4 border-neutral-900 text-white bg-neutral-900">
       <MenuBar editor={editor} />
       <EditorContent
-        className="prose w-full max-w-full px-2 bg-white"
+        className="prose w-full max-w-full h-full min-h-[20rem] px-2 bg-white"
         editor={editor}
       />
       <FootBar />
